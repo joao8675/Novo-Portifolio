@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --bright-color: #f2fcfc;
+    --dark-gray: #141414;
+    --normal-gray: #1a1a1a;
+    --white-gray: #a3a3a3;
+    --dark-green: #173125;
+    --white-green: #12C971;
+    --white-brown: #F0B595;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark-gray);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 200px 0px 100px 500px;
+    width: 1000px;
+    gap: 30px;
+}
+
+main h2 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: var(--bright-color);
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 50px;
+    letter-spacing: 3px;
+}
+
+.containerTop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.containerImg {
+    border: 1px solid red;
+    width: 350px;
+    height: 450px;
+    transition: opacity 0.3s ease;
+}
+
+.containerInfo {
+    display: block;
+    top: 40px;
+    opacity: 0;
+    transform: translateX(-300px);
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+    position: absolute;
+    left: 400px;
+    width: 400px;
+}
+.containerInfo a {
+    position: absolute;
+    text-decoration: none;
+    color: var(--bright-color);
+    background-color: #363636;
+    padding: 10px 15px;
+    border-radius: 30px;
+    top: 150px;
+}
+.containerTop:hover .containerInfo {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.containerTop:hover .containerImg {
+    opacity: 1;
+}
+
+.containerTop h3 {
+    color: var(--bright-color);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.containerTop p {
+    color: var(--white-gray);
+    font-weight: 500;
+    font-size: 14px;
+}
+.containerMid {
+    display: flex;
+    flex-direction: ;
+}
