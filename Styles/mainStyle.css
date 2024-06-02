@@ -45,10 +45,16 @@ main h2 {
 }
 
 .containerImg {
-    border: 1px solid red;
+    border: 1px solid var(--bright-color);
     width: 350px;
     height: 450px;
     transition: opacity 0.3s ease;
+}
+.containerImg:nth-child(1) {
+    background-image: url(./Assets/Delicacy.png);
+    background-size: cover;
+    background-position: 80% 0%;
+    transition: 1s;
 }
 
 .containerInfo {
@@ -74,7 +80,9 @@ main h2 {
     opacity: 1;
     transform: translateX(0);
 }
-
+.containerImg:hover {
+    background-position: 50% 0%;
+}
 .containerTop:hover .containerImg {
     opacity: 1;
 }
