@@ -13,9 +13,12 @@
 header {
     display: flex;
     flex-direction: column;
+    align-items: center;
     color: var(--bright-color);
-    margin: 0px 0px 0px 500px;
     padding: 180px 0px 0px 0px;
+
+}
+.headerContainer {
     width: 1000px;
 }
 .roof {
@@ -36,7 +39,7 @@ header {
 }
 .roof a {
     position: absolute;
-    right: 400px;
+    right: 450px;
     font-size: 40px;
     color: var(--bright-color);
     transition: 0.2s;

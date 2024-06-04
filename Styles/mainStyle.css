@@ -9,97 +9,88 @@
     --white-green: #12C971;
     --white-brown: #F0B595;
 }
+
 main {
-    font-family: Inter, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 200px 0px 100px;
+}
+
+.projectsContainer {
+    text-align: center;
+    width: 80%;
+    max-width: 1000px;
+}
+.projectsContainer h2 {
     color: var(--bright-color);
+    font-size: 50px;
+    font-weight: 300;
+    display: flex;
+    align-items: flex-start;
+    margin: 0px 0px 100px;
+}
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin-top: 20px;
+}
+
+.cards:nth-child(1) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
+    background-image: url(./Assets/Delicacy.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    height: 350px;
+    text-align: center;
+    transition: 1s;
 }
-main h2 {
-    position: relative;
-    left: -360px;
-    font-size: 50px;
+.cards:nth-child(1):hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.267);
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.infoHover {
+    background-color: var(--normal-gray);
+    width: 300px;
+    height: 100px;
+    padding: 15px 10px 20px 10px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    transition: 0.3s;
+}
+.infoHover:hover {
+    height: 120px;
+    padding-top: 20px;
+}
+.infoHover p {
+    color: var(--white-gray);
+    font-family: Inter, sans-serif;
+    font-size: 14px;
     font-weight: 400;
 }
-.container {
+.infoHover h2 {
+    font-weight: 400;
+    font-size: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    place-items: center;
-    margin-inline: 1.5rem;
-    padding-block: 1.5rem;
-}
-.cardContainer {
-    display: grid;
-}
-.cardArticle {
-    position: relative;
-    overflow: hidden;
-}
-.cardImg {
-    width: 328px;
-    height: 400px;
-    border-radius: 1rem;
-}
-.cardData {
-    width: 280px;
-    background-color: var(--dark-gray);
-    padding: 1.5rem 2rem;
-    box-shadow: 0 8px 24px #000000b0;
-    border-radius: 1rem;
-    position: absolute;
-    bottom: -9rem;
-    left: 0;
-    right: 0;
-    margin-inline: auto;
-    opacity: 0;
-    transition: opacity 1s 1s;
-}
-.cardDescription {
-    display: block;
-    margin-bottom: .25rem;
-    font-size: 14px;
-    color: var(--white-gray);
-}
-.cardData h2 {
-    font-weight: 400;
-    font-size: 26px;
     color: var(--bright-color);
-    margin-bottom: 1.5rem;
+    margin: 5px 0px;
 }
-.cardData a {
+.infoHover a {
     text-decoration: none;
     color: var(--white-brown);
-    transition: 0.3s;
-}
-.cardData a:hover {
-    color: #c29075;
-    font-size: 17px;
+    transition: color 0.3s;
 }
 
-.cardArticle:hover .cardData {
-    animation: show-data 1s forwards;
-    opacity: 1;
-    transition: opacity .3s;
-}
-.cardArticle:hover {
-    animation: remove-overflow 2s forwards;
-}
-
-@keyframes show-data {
-    50% {
-        transform: translateY(-10rem);
-    }
-    100% {
-        transform: translateY(-7rem);
-    }
-}
-
-@keyframes remove-overflow{
-    to {
-        overflow: initial;
-    }
+.infoHover a:hover {
+    color: #0056b3;
 }
