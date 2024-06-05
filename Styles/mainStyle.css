@@ -51,9 +51,47 @@ main {
     text-align: center;
     transition: 1s;
 }
+.cards:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background-image: url(./Assets/dashboardWhiteTheme.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    height: 350px;
+    text-align: center;
+    transition: 1s;
+}
 .cards:nth-child(1):hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.267);
     background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cards:nth-child(2):hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.267);
+    background-size: 700px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cards:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background-image: url(./Assets/Login\ form.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    height: 350px;
+    text-align: center;
+    transition: 1s;
+}
+.cards:nth-child(3):hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.267);
+    background-size: 550px;
     background-repeat: no-repeat;
     background-position: center;
 }
