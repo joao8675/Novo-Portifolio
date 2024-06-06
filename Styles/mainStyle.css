@@ -95,6 +95,26 @@ main {
     background-repeat: no-repeat;
     background-position: center;
 }
+.cards:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background-image: url(./Assets/To-do-List.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: -30px;
+    border-radius: 5px;
+    height: 350px;
+    text-align: center;
+    transition: 1s;
+}
+.cards:nth-child(4):hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.267);
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .infoHover {
     background-color: var(--normal-gray);
     width: 300px;
