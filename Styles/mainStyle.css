@@ -12,6 +12,7 @@
 
 main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -29,7 +30,7 @@ main {
     font-weight: 300;
     display: flex;
     align-items: flex-start;
-    margin: 0px 0px 100px;
+    margin: 0px 0px 50px;
 }
 .cardsContainer {
     display: grid;
@@ -115,6 +116,50 @@ main {
     background-repeat: no-repeat;
     background-position: center;
 }
+.cards:nth-child(5) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background-image: url(./Assets/To-do-List.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: -30px;
+    border-radius: 5px;
+    height: 350px;
+    text-align: center;
+    transition: 1s;
+    opacity: 0;
+}
+.cards:nth-child(5):hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.267);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+}
+.cards:nth-child(6) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background-image: url(./Assets/To-do-List.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: -30px;
+    border-radius: 5px;
+    height: 350px;
+    text-align: center;
+    transition: 1s;
+    opacity: 0;
+}
+.cards:nth-child(6):hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.267);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+}
 .infoHover {
     background-color: var(--normal-gray);
     width: 300px;
@@ -151,4 +196,52 @@ main {
 
 .infoHover a:hover {
     color: #0056b3;
+}
+
+/* --------- About Me --------- */
+
+.aboutContainer {
+    display: flex;
+    width: 1000px;
+}
+.aboutMe {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.aboutHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.aboutHeader h2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--bright-color);
+    width: 50%;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: Inter, sans-serif;
+    letter-spacing: -3px;
+}
+.aboutHeader h2 span {
+    color: var(--white-gray);
+    width: 450px;
+    margin-bottom: 60px;
+}
+.aboutHeader p {
+    color: var(--white-gray);
+    font-size: 18px;
+    font-weight: 600;
+    width: 700px;
+    line-height: 1.8;
+}
+.aboutMyPicture {
+    width: 210px;
+    height: 210px;
+    border-radius: 15px;
+    background-image: url(./Assets/1717024859439.jpg);
+    background-position: center;
+    background-size: cover;
 }
