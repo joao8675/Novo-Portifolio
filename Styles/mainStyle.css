@@ -36,7 +36,7 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
-    margin-top: 20px;
+    margin: 20px 0px 50px 0px;
 }
 
 .cards:nth-child(1) {
@@ -213,6 +213,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 150px;
 }
 .aboutHeader h2 {
     display: flex;
@@ -244,4 +245,87 @@ main {
     background-image: url(./Assets/1717024859439.jpg);
     background-position: center;
     background-size: cover;
+}
+.aboutMain {
+    display: flex;
+    flex-direction: column;
+}
+.aboutServices {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.h2Service h2 {
+    color: var(--bright-color);
+    font-size: 30px;
+    font-weight: 300;
+}
+.serviceContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+    margin-bottom: 100px;
+}
+.serviceItem {
+    color: var(--bright-color);
+    background-color: #282828;
+    padding: 25px 30px;
+    width: 500px;
+}
+.serviceItem:nth-child(1) {
+    border-top-left-radius: 20px;
+}
+.serviceItem:nth-child(2) {
+    border-top-right-radius: 20px;
+}
+.serviceItem:nth-child(5) {
+    border-bottom-left-radius: 20px;
+}
+.serviceItem:nth-child(6) {
+    border-bottom-right-radius: 20px;
+}
+
+.skillsSection {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.h2Skill h2 {
+    color: var(--bright-color);
+    font-size: 30px;
+    font-weight: 300;
+}
+.skillContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+}
+.skillItem {
+    background: #282828;
+    padding: 25px 30px;
+    color: var(--bright-color);
+}
+.skillItem:nth-child(1) {
+    border-top-left-radius: 20px;
+}
+.skillItem:nth-child(2) {
+    border-top-right-radius: 20px;
+}
+.skillItem:nth-child(7) {
+    border-bottom-left-radius: 20px;
+}
+.skillItem:nth-child(8) {
+    border-bottom-right-radius: 20px;
+}
+.skillItem img {
+    height: 30px;
+}
+.flexInfo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.skillItem:nth-child(5) img {
+    height: 18px;
+    margin-top: 6px;
 }
