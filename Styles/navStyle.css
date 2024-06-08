@@ -40,18 +40,19 @@ nav.expanded {
 }
 .profile ion-icon {
     position: absolute;
-    left: 105px;
-    padding: 5px;
+    left: 95px;
+    padding: 15px;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
-    font-size: 40px;
+    font-size: 30px;
     color: var(--bright-color);
     cursor: pointer;
     background-color: #141414;
     transition: 0.3s;
 }
 nav.expanded .profile ion-icon {
-    left: 275px;
+    left: 265px;
+    top: 46px;
 }
 .myImage {
     background-image: url(./Assets/1717024859439.jpg);

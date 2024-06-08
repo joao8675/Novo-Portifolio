@@ -7,10 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
         
 
         if (nav.classList.contains('expanded')) {
-            toggleNav.name = 'chevron-back-circle-outline';
+            toggleNav.name = 'caret-back-outline';
         } else {
-            toggleNav.name = 'chevron-forward-circle-outline';
+            toggleNav.name = 'caret-forward-outline';
         }
     });
 });
-
