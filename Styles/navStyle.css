@@ -4,8 +4,12 @@
     --bright-color: #f2fcfc;
     --dark-gray: #141414;
     --normal-gray: #1a1a1a;
-    --white-gray: #282828;
+    --white-gray: #a3a3a3;
+    --dark-green: #173125;
+    --white-green: #12C971;
+    --white-brown: #F0B595;
 }
+
 * {
     padding: 0;
     margin: 0;
@@ -80,7 +84,7 @@ nav.expanded .profile h3 {
     display: block;
 }
 .homeLinks {
-    margin: 100px 25px 25px 50px;
+    margin: 100px 25px 200px 50px;
     display: flex;
     gap: 30px;
     flex-direction: column;
@@ -116,7 +120,6 @@ nav.expanded .homeLinks {
     margin: 0;
 }
 .menuFooter {
-    margin-top: 300px ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,4 +151,25 @@ nav.expanded .homeLinks {
 nav.expanded .profile-info {
     display: block;
     opacity: 1;
+}
+.navIcons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.navIcons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-gray);
+    font-size: 20px;
+    transition: 0.3s;
+}
+.navIcons a:hover {
+    background-color: #494949;
+    padding: 10px 10px;
+    border-radius: 100px;
+    color: #f2fcfc;
 }
