@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="./Styles/navStyle.css">
     <link rel="stylesheet" href="./Styles/headerStyle.css">
     <link rel="stylesheet" href="./Styles/mainStyle.css">
-    <script src="./JS/expanded.js" defer></script>
+    <link rel="stylesheet" href="./Styles/contact.css">
+    <link rel="stylesheet" href="./Styles/themes.css">
     <script src="./JS/themeSwitcher.js" defer></script>
+    <script src="./JS/expanded.js" defer></script>
     <script src="./JS/smoothScroll.js" defer></script>
 </head>
-<body>
-    <nav id="disable">
+<body class="light">
+    <nav id="disable" class="light">
         <div class="profile">
             <div class="myImage"></div>
             <ion-icon id="toggleNav" name="caret-forward-outline"></ion-icon>
@@ -32,10 +34,10 @@
             <a href="https://www.linkedin.com/in/joão-pereira-neto-481961297/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
         </div>
         <div class="menuFooter">
-            <div class="switch"><ion-icon name="moon-outline"></ion-icon></div>
+            <ion-icon id="themeSwitcher" name="moon-outline"></ion-icon>
         </div>
     </nav>
-    <header id="home">
+    <header id="home" class="light">
         <div class="headerContainer">
                 <div class="roof">
                     <p>Atualmente disponivel</p>
@@ -55,8 +57,8 @@
             </div>
         </div>
     </header>
-    <main>
-        <div class="projectsContainer">
+    <main class="light">
+        <div class="projectsContainer" id="projectsContainer">
             <h2 id="projects">Projects_</h2>
             <div class="cardsContainer">
                 <div class="cards">
@@ -103,7 +105,7 @@
                 </div>
             </div>
         </div>
-        <div class="aboutContainer" id="about">
+        <div class="aboutContainer" id="about" class="light">
             <div class="aboutMe">
                 <div class="aboutHeader">
                     <div class="aboutInfoHeader">
@@ -202,7 +204,7 @@
             </div>
         </div>
     </main>
-    <footer></footer>
+    <footer class="light"></footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
