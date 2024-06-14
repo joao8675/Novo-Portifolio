@@ -1,14 +1,8 @@
-/*----------LightTheme----------*/
-
 :root {
-    --bg-lightTheme: #f2fcfc;
-}
-
-/*----------DarkTheme----------*/
-
-:root {
-    --bg-DarkTheme: #1a1a1a;
+    --black-clr: #000000;
+    --bright-color: #f2fcfc;
     --dark-gray: #141414;
+    --normal-gray: #1a1a1a;
     --white-gray: #a3a3a3;
     --dark-green: #173125;
     --white-green: #12C971;
@@ -16,77 +10,32 @@
 }
 
 
-
-body.light {
-    background-color: var(--bg-DarkTheme);
-    color: var(--bg-lightTheme);
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-.profile-info.light {
-    color: var(--dark-gray);
-}
-.nav.light {
-    background-color: #f0f0f0;
-    color: #333333;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.header.light {
-    background-color: #ffffff;
-    color: #333333;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.main.light {
-    background-color: #ffffff;
-    color: #333333;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.footer.light {
-    background-color: #f0f0f0;
-    color: #333333;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.menuFooter.light ion-icon {
-    color: #333333;
-    transition: color 0.3s ease;
-}
-
-/*----------LightTheme----------*/
-
 body.dark {
-    background-color: var(--bg-lightTheme);
-    color: #ffffff;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: var(--bright-color);
 }
-
-.nav.dark {
-    background-color: #333333;
-    color: #ffffff;
-    transition: background-color 0.3s ease, color 0.3s ease;
+nav.dark {
+    background-color: #c9c9c9;
+    box-shadow: 0px 0px 24px 0px #00000027;
 }
-
-.header.dark {
-    background-color: #1a1a1a;
-    color: #ffffff;
-    transition: background-color 0.3s ease, color 0.3s ease;
+.profile-info.dark {
+    color: var(--black-clr);
 }
-
-.main.dark {
-    background-color: #1a1a1a;
-    color: #ffffff;
-    transition: background-color 0.3s ease, color 0.3s ease;
+.homeLinks.dark a {
+    color: var(--black-clr);
 }
-
-.footer.dark {
-    background-color: #333333;
-    color: #ffffff;
-    transition: background-color 0.3s ease, color 0.3s ease;
+.homeLinks.dark a span {
+    font-weight: 500;
 }
-
-.menuFooter.dark ion-icon {
-    color: #ffffff;
-    transition: color 0.3s ease;
+.homeLinks.dark a:hover {
+    color: #535353;
+}
+.profile ion-icon.dark-background {
+    background-color: #c9c9c9;
+    color: var(--black-clr);
+}
+.menuFooter.dark {
+    color: #797979;
+}
+.menuFooter.dark:hover {
+    color: #575757;
 }
