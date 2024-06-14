@@ -11,17 +11,17 @@
 
 
 body.dark {
-    background-color: var(--bright-color);
+    background-color: #ffffff;
 }
 nav.dark {
-    background-color: #c9c9c9;
-    box-shadow: 0px 0px 24px 0px #00000027;
+    background-color: #ebebeb;
+    box-shadow: 0px 0px 4px 0px #00000027;
 }
 .profile-info.dark {
-    color: var(--black-clr);
+    color: var(--dark-gray);
 }
 .homeLinks.dark a {
-    color: var(--black-clr);
+    color: var(--dark-gray);
 }
 .homeLinks.dark a span {
     font-weight: 500;
@@ -30,12 +30,53 @@ nav.dark {
     color: #535353;
 }
 .profile ion-icon.dark-background {
-    background-color: #c9c9c9;
-    color: var(--black-clr);
+    background-color: #ebebeb;
+    color: var(--dark-gray);
 }
 .menuFooter.dark {
     color: #797979;
 }
 .menuFooter.dark:hover {
     color: #575757;
+}
+
+/*----------HEADER THEME----------*/
+
+.headerBody.dark h1 {
+    color: var(--black-clr);
+}
+.location.dark p {
+    color: #e2753b;
+}
+.roof.dark p {
+    background-color: #12c9714b;
+    color: #00802b;
+}
+.roof.dark ion-icon {
+    color: var(--dark-gray);
+    transition: 0.2s;
+}
+.roof.dark ion-icon:hover {
+    color: #585858;
+}
+
+/*----------MAIN THEME----------*/
+
+.projectsContainer.dark h2:nth-child(1) {
+    color: var(--dark-gray);
+}
+
+.aboutInfoHeader.dark h2 {
+    color: var(--dark-gray);
+}
+.h2Service.dark h2 {
+    color: var(--dark-gray);
+}
+.serviceItem.dark {
+    background-color: #dbdbdb88;
+    color: var(--dark-gray);
+}
+.skillItem.dark {
+    background-color: #dbdbdb88;
+    color: var(--dark-gray);
 }

@@ -1,0 +1,42 @@
+:root {
+    --black-clr: #000000;
+    --bright-color: #f2fcfc;
+    --dark-gray: #141414;
+    --normal-gray: #1a1a1a;
+    --white-gray: #a3a3a3;
+    --dark-green: #173125;
+    --white-green: #12C971;
+    --white-brown: #F0B595;
+}
+
+
+body {
+    scrollbar-width: thin; /* Espessura da barra de rolagem: auto, thin, none */
+    scrollbar-color: #888 #f1f1f1; /* Cor do polegar e do trilho */
+}
+
+/* Barra de rolagem geral */
+::-webkit-scrollbar {
+    width: 6px; /* Largura da barra de rolagem */
+    height: 12px; /* Altura da barra de rolagem horizontal */
+}
+
+/* Trilho da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: var(--normal-gray); /* Cor do trilho */
+}
+
+/* Polegar da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Cor do polegar */
+}
+
+/* Polegar da barra de rolagem quando estiver sendo pressionado */
+::-webkit-scrollbar-thumb:active {
+    background: #555; /* Cor do polegar quando pressionado */
+}
+
+/* Canto da barra de rolagem horizontal */
+::-webkit-scrollbar-corner {
+    background: #f1f1f1; /* Cor do canto da barra de rolagem */
+}

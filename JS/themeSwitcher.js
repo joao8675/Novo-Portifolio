@@ -9,6 +9,14 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll('ion-icon').forEach(icon => icon.classList.toggle('dark'));
         document.querySelector('.profile ion-icon').classList.toggle('dark-background');
         document.querySelector('.menuFooter').classList.toggle('dark');
+        document.querySelector('.headerBody').classList.toggle('dark');
+        document.querySelector('.location').classList.toggle('dark');
+        document.querySelector('.roof').classList.toggle('dark');
+        document.querySelector('.projectsContainer').classList.toggle('dark');
+        document.querySelector('.aboutInfoHeader').classList.toggle('dark');
+        document.querySelector('.h2Service').classList.toggle('dark');
+        document.querySelectorAll('.serviceItem').forEach(item => item.classList.toggle('dark'));
+        document.querySelectorAll('.skillItem').forEach(item => item.classList.toggle('dark'));
         toggleTheme('header');
         toggleTheme('main');
         toggleTheme('footer');

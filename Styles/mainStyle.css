@@ -23,6 +23,7 @@ main {
     text-align: center;
     width: 80%;
     max-width: 1000px;
+    margin-bottom: 250px;
 }
 .projectsContainer h2 {
     color: var(--bright-color);
