@@ -295,6 +295,7 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 4px;
+    margin-bottom: 200px;
 }
 .skillItem {
     background: #282828;
@@ -324,4 +325,200 @@ main {
 .skillItem:nth-child(5) img {
     height: 18px;
     margin-top: 6px;
+}
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+}
+.contactHeader {
+    display: flex;
+    flex-direction: column;
+}
+.contactHeaderTop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.contactHeaderTopIcons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 30px;
+}
+.contactHeaderTop h2 {
+    color: var(--bright-color);
+    font-weight: 300;
+    font-size: 50px;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 20px;
+}
+.contactHeaderTopIcons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-gray);
+    text-decoration: none;
+    transition: 0.3s;
+    border-radius: 60px;
+    padding: 8px 8px;
+}
+.contactHeaderTopIcons a:hover {
+    color: var(--bright-color);
+    text-decoration: none;
+    background-color: #3b3b3b;
+    border-radius: 60px;
+    padding: 8px 8px;
+}
+.contactHeader p {
+    color: var(--white-gray);
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+hr {
+    border: none;
+    background-color: #353535;
+    height: 2px;
+    margin: 10px 0px 50px 0px;
+}
+.contactMainTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 700px;
+    margin-bottom: 40px;
+}
+.contactMainTopEmail p:nth-child(1) {
+    color: var(--bright-color);
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.contactMainTopEmail p:nth-child(2) {
+    color: var(--white-gray);
+    font-size: 16px;
+}
+.contactMainTopNumber p:nth-child(1) {
+    color: var(--bright-color);
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.contactMainTopNumber p:nth-child(2) {
+    color: var(--white-gray);
+    font-size: 16px;
+}
+.contactMainButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 120px;
+}
+.contactMainButtons button {
+    border: 0.1px solid var(--white-gray);
+    background-color: transparent;
+    padding: 13px 25px;
+    border-radius: 15px;
+    color: var(--bright-color);
+    font-family: 'Inter', sans-serif;
+    transition: 0.3s;
+    user-select: none;
+    cursor: pointer;
+}
+.contactMainButtons button:hover {
+    background-color: #1f1f1f;
+}
+.contactMainButtons a {
+    padding: 12px 24px;
+    background-color: var(--white-green);
+    border-radius: 15px;
+    text-decoration: none;
+    color: var(--bright-color);
+    transition: 0.3s;
+}
+.contactMainButtons a:hover {
+    background-color: #0fa75e;
+}
+.contactInputsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.contactInputsContainer h3 {
+    color: var(--bright-color);
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.inputsTop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.inputsTop input {
+    width: 49%;
+    padding: 20px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #292929;
+}
+.inputs textarea {
+    border: none;
+    background-color: #292929;
+    height: 150px;
+    border-radius: 10px;
+}
+.inputs button {
+    background-color: var(--white-green);
+    border: none;
+    padding: 20px 20px;
+    border-radius: 10px;
+    color: var(--bright-color);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+}
+footer hr {
+    border: none;
+    background-color: #353535;
+    height: 1px;
+    width: 100%;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 200px;
+}
+.footer p {
+    color: var(--white-gray);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+.footer p span {
+    color: var(--bright-color);
+    font-weight: 600;
+}
+.footer a {
+    text-decoration: none;
+    color: var(--white-green);
+    transition: 0.3s;
+}
+.footer a:hover {
+    color: #0ba058;
 }
