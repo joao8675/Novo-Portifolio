@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll('.inputs').forEach(item => item.classList.toggle('dark'));
         document.querySelectorAll('.footer').forEach(item => item.classList.toggle('dark'));
         document.querySelectorAll('.contactInputsContainer').forEach(item => item.classList.toggle('dark'));
+        document.querySelectorAll('.h2Skill').forEach(item => item.classList.toggle('dark'));
         toggleTheme('header');
         toggleTheme('main');
         toggleTheme('footer');

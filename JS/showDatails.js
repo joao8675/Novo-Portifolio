@@ -5,13 +5,13 @@ function showDetails(detailsId) {
             info: 'Este é um site de restaurante de pizza para auxiliar no processo das entregas. nele e possivel ver as promocoes, realizar pedidos, realizar o pagamento online e conversar com o atendente se necessario.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla praesentium quae, optio expedita sunt consequatur vitae accusamus perspiciatis explicabo et reprehenderit ipsa nemo modi natus eos consectetur debitis officia? Ex.',
             skills: ['HTML', 'CSS', 'JavaScript', 'Git', 'GitHub'],
             images: ['../Styles/Assets/Delicacy.png', '../Styles/Assets/Delicacy.png'], // URLs das imagens do projeto
-            link: 'http://www.delicacy-pizzaria.com'
+            link: 'https://joao8675.github.io/Delicacy-site-/'
         },
         details2: {
             title: 'Dashboard Invester',
-            info: 'Este é um painel de controle para um banco.',
-            skills: ['React', 'Node.js', 'MongoDB'],
-            images: ['image3_url.jpg', 'image4_url.jpg'],
+            info: 'Este é um painel de controle para um banco.Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsa repellendus voluptates. Odio odit praesentium similique officiis molestiae veniam laboriosam quidem nesciunt, et dolorem ea, aperiam, maiores saepe vitae fuga.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus impedit dolorem amet, fuga officia, numquam exercitationem dignissimos quibusdam sit consequuntur facilis porro eligendi voluptatibus quo provident, laborum deleniti velit incidunt!',
+            skills: ['HTML', 'CSS', 'JavaScript', 'Git', 'GitHub'],
+            images: ['../Styles/Assets/Delicacy.png', '../Styles/Assets/Delicacy.png'],
             link: 'http://www.dashboard-invester.com'
         },
         // Adicione mais projetos conforme necessário
