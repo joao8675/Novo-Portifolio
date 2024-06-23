@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="./Styles/navStyle.css">
     <link rel="stylesheet" href="./Styles/headerStyle.css">
     <link rel="stylesheet" href="./Styles/mainStyle.css">
-    <link rel="stylesheet" href="./Styles/contact.css">
     <link rel="stylesheet" href="./Styles/themes.css">
     <link rel="stylesheet" href="./Styles/scroll.css">
+    <link rel="stylesheet" href="./Styles/showDatails.css">
     <script src="./JS/themeSwitcher.js" defer></script>
     <script src="./JS/expanded.js" defer></script>
     <script src="./JS/smoothScroll.js" defer></script>
+    <script src="./JS/showDatails.js" defer></script>
 </head>
 <body class="light">
     <nav id="disable" class="light">
@@ -66,42 +67,42 @@
                     <div class="infoHover">
                         <p>Pizza restaurant, website.</p>
                         <h2>Delicacy Pizzaria</h2>
-                        <a href="#">See more</a>
+                        <button onclick="showDetails('details1')">See More</button>
                     </div>
                 </div>
                 <div class="cards">
                     <div class="infoHover">
                         <p>Bank dashboard, website.</p>
                         <h2>Dashboard Invester</h2>
-                        <a href="#">See more</a>
+                        <button onclick="showDetails('details2')">See More</button>
                     </div>
                 </div>
                 <div class="cards">
                     <div class="infoHover">
                         <p>Login page for users.</p>
                         <h2>Login page</h2>
-                        <a href="#">See more</a>
+                        <button onclick="showDetails('details3')">See More</button>
                     </div>
                 </div>
                 <div class="cards">
                     <div class="infoHover">
                         <p>React and tailwind list.</p>
                         <h2>To-do List</h2>
-                        <a href="#">See more</a>
+                        <button onclick="showDetails('details4')">See More</button>
                     </div>
                 </div>
                 <div class="cards">
                     <div class="infoHover">
                         <p>First version, portfolio.</p>
                         <h2>Portfolio v1</h2>
-                        <a href="#">See more</a>
+                        <button onclick="showDetails('details5')">See More</button>
                     </div>
                 </div>
                 <div class="cards">
                     <div class="infoHover">
                         <p>Pizza restaurant, website.</p>
                         <h2>Delicacy</h2>
-                        <a href="#">See more</a>
+                        <button onclick="showDetails('details6')">See More</button>
                     </div>
                 </div>
             </div>
@@ -198,9 +199,9 @@
                                     <div class="inputs">
                                         <div class="inputsTop">
                                             <input type="text" placeholder="Name">
-                                            <input type="email">
+                                            <input type="email" placeholder="E-mail">
                                         </div>
-                                        <textarea name="" id=""></textarea>
+                                        <textarea name="" id="" placeholder="Text"></textarea>
                                         <button type="submit">Submit</button>
                                     </div>
                                 </div>
@@ -214,10 +215,32 @@
             <hr>
             <div class="footer">
                 <p>Desenvolvido por <span>Joao Pereira Neto</span> ·   ©2024 Joadev</p>
-                <a href="">Portifolio Code Here</a>
+                <a href="https://github.com/joao8675/Novo-Portifolio/blob/main/index.html" target="_blank">Portifolio Code Here</a>
             </div>
         </footer>
     </main>
+    <div id="overlay" class="overlay" onclick="hideDetails()"></div>
+<div id="modal" class="modal">
+    <div id="modal-content" class="modal-content">
+        <div class="topModal">
+            <h2></h2>
+        </div>
+        <div class="midModal">
+            <div class="Infos"></div>
+            <div class="UsedSkills"></div>
+        </div>
+        <div class="imageContainer">
+            <img src="" alt="Project Image 1" class="projectImage">
+            <img src="" alt="Project Image 2" class="projectImage">
+        </div>
+        
+    </div>
+    <div class="bottomModal">
+            <a href="">Entrar no Site</a>
+            <button class="close-button" onclick="hideDetails()">Close</button>
+        </div>
+    
+</div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

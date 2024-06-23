@@ -17,6 +17,14 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.h2Service').classList.toggle('dark');
         document.querySelectorAll('.serviceItem').forEach(item => item.classList.toggle('dark'));
         document.querySelectorAll('.skillItem').forEach(item => item.classList.toggle('dark'));
+        document.querySelectorAll('.contactHeaderTop').forEach(item => item.classList.toggle('dark'));
+        document.querySelectorAll('.contactMainTopEmail').forEach(item => item.classList.toggle('dark'));
+        document.querySelectorAll('.contactMainTopNumber').forEach(item => item.classList.toggle('dark'));
+        document.querySelectorAll('.contactMainButtons').forEach(item => item.classList.toggle('dark'));
+        document.querySelectorAll('.inputsTop').forEach(item => item.classList.toggle('dark'));
+        document.querySelectorAll('.inputs').forEach(item => item.classList.toggle('dark'));
+        document.querySelectorAll('.footer').forEach(item => item.classList.toggle('dark'));
+        document.querySelectorAll('.contactInputsContainer').forEach(item => item.classList.toggle('dark'));
         toggleTheme('header');
         toggleTheme('main');
         toggleTheme('footer');

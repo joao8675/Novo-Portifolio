@@ -469,12 +469,17 @@ hr {
     border-radius: 10px;
     border: none;
     background-color: #292929;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
 }
 .inputs textarea {
     border: none;
     background-color: #292929;
     height: 150px;
     border-radius: 10px;
+    padding: 15px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
 }
 .inputs button {
     background-color: var(--white-green);
@@ -485,6 +490,11 @@ hr {
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 100px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.inputs button:hover {
+    background-color: #0baf60;
 }
 footer {
     display: flex;

@@ -80,3 +80,31 @@ nav.dark {
     background-color: #dbdbdb88;
     color: var(--dark-gray);
 }
+.contactHeaderTop.dark h2 {
+    color: var(--black-clr);
+}
+.contactMainTopEmail.dark p:nth-child(1) {
+    color: var(--black-clr);
+}
+.contactMainTopNumber.dark p:nth-child(1) {
+    color: var(--black-clr);
+}
+.contactMainButtons.dark button {
+    border: 1px solid var(--black-clr);
+    color: var(--black-clr);
+}
+.contactMainButtons.dark button:hover {
+    background-color: #f0f0f0;
+}
+.inputsTop.dark input {
+    background-color: #dbdbdb88;
+}
+.inputs.dark textarea {
+    background-color: #dbdbdb88;
+}
+.contactInputsContainer.dark h3 {
+    color: var(--black-clr);
+}
+.footer.dark p span {
+    color: var(--black-clr);
+}
