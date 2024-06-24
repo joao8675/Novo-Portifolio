@@ -11,10 +11,30 @@ function showDetails(detailsId) {
             title: 'Dashboard Invester',
             info: 'Este é um painel de controle para um banco.Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsa repellendus voluptates. Odio odit praesentium similique officiis molestiae veniam laboriosam quidem nesciunt, et dolorem ea, aperiam, maiores saepe vitae fuga.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus impedit dolorem amet, fuga officia, numquam exercitationem dignissimos quibusdam sit consequuntur facilis porro eligendi voluptatibus quo provident, laborum deleniti velit incidunt!',
             skills: ['HTML', 'CSS', 'JavaScript', 'Git', 'GitHub'],
-            images: ['../Styles/Assets/Delicacy.png', '../Styles/Assets/Delicacy.png'],
-            link: 'http://www.dashboard-invester.com'
+            images: ['../Styles/Assets/dashboardWhiteTheme.png', '../Styles/Assets/dashboardWhiteTheme.png'],
+            link: 'https://joao8675.github.io/Dashboard/'
         },
-        // Adicione mais projetos conforme necessário
+        details3: {
+            title: 'Login Page',
+            info: 'Este é um painel de controle para um banco.Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsa repellendus voluptates. Odio odit praesentium similique officiis molestiae veniam laboriosam quidem nesciunt, et dolorem ea, aperiam, maiores saepe vitae fuga.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus impedit dolorem amet, fuga officia, numquam exercitationem dignissimos quibusdam sit consequuntur facilis porro eligendi voluptatibus quo provident, laborum deleniti velit incidunt!',
+            skills: ['HTML', 'CSS', 'JavaScript', 'Git', 'GitHub'],
+            images: ['../Styles/Assets/Delicacy.png', '../Styles/Assets/Delicacy.png'],
+            link: 'https://joao8675.github.io/Login-Page/'
+        },
+        details4: {
+            title: 'To-Do List',
+            info: 'Este é um painel de controle para um banco.Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsa repellendus voluptates. Odio odit praesentium similique officiis molestiae veniam laboriosam quidem nesciunt, et dolorem ea, aperiam, maiores saepe vitae fuga.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus impedit dolorem amet, fuga officia, numquam exercitationem dignissimos quibusdam sit consequuntur facilis porro eligendi voluptatibus quo provident, laborum deleniti velit incidunt!',
+            skills: ['HTML:5', 'React', 'Tailwind', 'JavaScript', 'Git', 'GitHub'],
+            images: ['../Styles/Assets/dashboardWhiteTheme.png', '../Styles/Assets/dashboardWhiteTheme.png'],
+            link: 'https://joao8675.github.io/To-do-list/'
+        },
+        details5: {
+            title: 'Portifolio v1',
+            info: 'Este é um painel de controle para um banco.Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsa repellendus voluptates. Odio odit praesentium similique officiis molestiae veniam laboriosam quidem nesciunt, et dolorem ea, aperiam, maiores saepe vitae fuga.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus impedit dolorem amet, fuga officia, numquam exercitationem dignissimos quibusdam sit consequuntur facilis porro eligendi voluptatibus quo provident, laborum deleniti velit incidunt!',
+            skills: ['HTML', 'CSS', 'JavaScript', 'Git', 'GitHub'],
+            images: ['../Styles/Assets/Delicacy.png', '../Styles/Assets/Delicacy.png'],
+            link: 'https://joao8675.github.io/Portifolio/'
+        },
     };
 
     const modalTitle = document.querySelector('.topModal h2');

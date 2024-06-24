@@ -127,13 +127,16 @@
 .imageContainer {
     display: flex;
     margin: 0px 40px;
-    width: 500px;
+    padding: 0px 20px;
+    width: 860px;
     height: 290px;
     gap: 80px;
 }
+.imageContainer img {
+    /*PAREI AQUI*/
+}
 
 .projectImage {
-    width: calc(50% - 10px);
     border-radius: 5px;
 }
 
@@ -157,3 +160,50 @@
 .bottomModal a:hover {
     background-color: #0c9653;
 }
+/*
+
+---------1---------
+Adicione o EmailJS ao seu projeto:
+
+Primeiro, crie uma conta em EmailJS.
+Crie um novo serviço de email e uma nova template.
+Obtenha o User ID e o Service ID.
+
+---------2---------
+Adicione o EmailJS ao seu HTML:
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    (function(){
+        emailjs.init("SEU_USER_ID"); // Substitua pelo seu User ID
+    })();
+</script>
+
+---------3---------
+Crie seu formulário HTML:
+<form id="contact-form">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="message">Mensagem:</label>
+    <textarea id="message" name="message" required></textarea>
+    <br>
+    <button type="submit">Enviar</button>
+</form>
+
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        emailjs.sendForm('SEU_SERVICE_ID', 'SEU_TEMPLATE_ID', this)
+            .then(function() {
+                alert('Email enviado com sucesso!');
+            }, function(error) {
+                alert('Erro ao enviar o email: ' + JSON.stringify(error));
+            });
+    });
+</script>
+
+*/
