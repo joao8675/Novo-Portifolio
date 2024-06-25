@@ -98,9 +98,11 @@ nav.dark {
 }
 .inputsTop.dark input {
     background-color: #dbdbdb88;
+    color: var(--black-clr);
 }
 .inputs.dark textarea {
     background-color: #dbdbdb88;
+    color: var(--black-clr);
 }
 .contactInputsContainer.dark h3 {
     color: var(--black-clr);
@@ -111,3 +113,7 @@ nav.dark {
 .h2Skill.dark h2 {
     color: var(--black-clr);
 }
+
+.copied {
+    font-weight: 600;
+  }

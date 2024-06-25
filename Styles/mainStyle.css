@@ -471,6 +471,7 @@ hr {
     background-color: #292929;
     font-family: 'Inter', sans-serif;
     font-size: 14px;
+    color: var(--bright-color);
 }
 .inputs textarea {
     border: none;
@@ -480,6 +481,7 @@ hr {
     padding: 15px;
     font-family: 'Inter', sans-serif;
     font-size: 14px;
+    color: var(--bright-color);
 }
 .inputs button {
     background-color: var(--white-green);

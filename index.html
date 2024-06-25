@@ -14,6 +14,7 @@
     <script src="./JS/expanded.js" defer></script>
     <script src="./JS/smoothScroll.js" defer></script>
     <script src="./JS/showDatails.js" defer></script>
+    <script src="./JS/CopyEmail.js" defer></script>
 </head>
 <body class="light">
     <nav id="disable" class="light">
@@ -54,7 +55,7 @@
             </div>
             <div class="headerLinks">
                 <a href="#about">Sobre</a>
-                <a href="./Styles/Assets/Curriculo.pdf" target="_blank" >Veja meu CV</a>
+                <a id="download-link" href="./Styles/Assets/Curriculo.pdf" target="_blank" download="./Styles/Assets/Curriculo.pdf">Veja meu CV</a>
                 <a href="https://github.com/joao8675" target="_blank">Github</a>
             </div>
         </div>
@@ -181,7 +182,7 @@
                             <div class="contactMain">
                                 <div class="contactMainTop">
                                     <div class="contactMainTopEmail">
-                                        <p class="email">joaozinho.pereiraneto13@gmail.com</p>
+                                        <p class="email" id="email">joaozinho.pereiraneto13@gmail.com</p>
                                         <p class="emailLabel">E-mail</p>
                                     </div>
                                     
@@ -191,19 +192,19 @@
                                     </div>                             
                                 </div>
                                 <div class="contactMainButtons">
-                                    <button>Copy E-mail</button>
-                                    <a href="#">WhatsApp</a>
+                                    <button id="copyButton" onclick="copiarEmail()">Copy E-mail</button>
+                                    <a href="https://wa.me/5511994267054" target="_blank">WhatsApp</a>
                                 </div>
                                 <div class="contactInputsContainer">
                                     <h3>Send me a message</h3>
-                                    <div class="inputs">
+                                    <form class="inputs" action="https://formsubmit.co/joaozinho.pereiraneto13@gmail.com" method="POST">
                                         <div class="inputsTop">
-                                            <input type="text" placeholder="Name" required>
-                                            <input type="email" placeholder="E-mail" required>
+                                            <input type="text" name="name" placeholder="Name" required>
+                                            <input type="email" name="email" placeholder="E-mail" required>
                                         </div>
-                                        <textarea name="" id="" placeholder="Text" required></textarea>
+                                        <textarea name="message" id="message" placeholder="Text" required></textarea>
                                         <button type="submit">Submit</button>
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
